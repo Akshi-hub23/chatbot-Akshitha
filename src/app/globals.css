@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colors - "Teal Dark Theme" */
+  --color-primary: #2DD4BF; /* Teal-400 */
+  --color-accent: #14B8A6;  /* Teal-500 */
+
+  --bg-page: #0F172A;    /* Slate-900 */
+  --bg-surface: #1E293B; /* Slate-800 */
+  --bg-input: #1E293B;
+
+  --text-primary: #F8FAFC;   /* Slate-50 */
+  --text-secondary: #94A3B8; /* Slate-400 */
+  --muted: #64748B;          /* Slate-500 */
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-pill: 9999px;
+
+  /* Motion */
+  --motion-fast: 150ms;
+  --motion-medium: 300ms;
+  --motion-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --nav-width: 260px;
+  --right-panel-width: 300px;
+  --topbar-height: 64px;
+  --content-max-width: 800px;
+}
+
+/* Optional: Keep light mode variables if user toggles, but default is dark based on root */
+[data-theme="light"] {
+  --color-primary: #0D9488;
+  --bg-page: #F1F5F9;
+  --bg-surface: #FFFFFF;
+  --bg-input: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #64748B;
+  --border: #E2E8F0;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn var(--motion-medium) var(--motion-ease) forwards;
+}
