@@ -2,8 +2,6 @@
 
 A professional, real-time generative AI chatbot built during the Generative AI Intensive by HCLTech - GUVI. This project demonstrates streaming LLM responses, voice input, and adaptable response modes with clean UI and prompt engineering tools—ideal for showcasing in a GitHub portfolio.
 
-<!-- Badges -->
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Built With Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?logo=next.js)](https://nextjs.org)
 [![Generative AI](https://img.shields.io/badge/Generative%20AI-LLM-blue)](#)
 
