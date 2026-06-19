@@ -120,24 +120,10 @@ Open `http://localhost:3000` in your browser and interact with the chat UI. Use 
 
 ## 11. Screenshots & Demo 📸
 
-- Demo video: (placeholder) Add demo video link here
-- Screenshots:
-	- Placeholder: `screenshots/chat_main.png`
-	- Placeholder: `screenshots/voice_flow.png`
+### Chatbot Interface
+![Chatbot Screenshot](./screenshot.jpeg)
 
-Add images in `assets/screenshots/` and update this section with real images.
 
-## 12. Contributing & License 🤝
-
-Contributions welcome — open an issue or submit a pull request. Please follow simple contribution guidelines:
-
-- Fork the repo and create a feature branch
-- Run tests and linting locally
-- Open a PR describing your change
-
-License: MIT — see `LICENSE` for details.
-
----
 
 ## Keywords / Tags
 
